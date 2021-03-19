@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url('https://res.cloudinary.com/beumsk/image/upload/v1520767362/back-pika.jpg') no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  text-shadow: 1px 1px #F44336;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+@media only screen and (min-width: 1024px) {  
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* random image */
+#random {
+  width: 250px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px 4px rgba(0,0,0,0.1);
+}
+#random:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* rotation animation on click */
+@keyframes rotation {
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@-webkit-keyframes rotation {
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+.animated {
+  animation: rotation 1s linear;
+  -webkit-animation: rotation 1s linear;
+}
+
+/* youtube audio button */
+#youtube-audio {
+  width: 40px;
+  margin: auto;
+  padding: 20px 0;
+  color: #333;
+  cursor: pointer;
+}
+#youtube-audio:hover {
+  color: #f5f5f5;
+}
+#youtube-icon {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+a {
+  color: #F44336;
+  text-decoration: none;
+  text-shadow: none;
+}
+a:hover, a:focus {
+  color: whitesmoke;
+  text-decoration: underline;
+}
